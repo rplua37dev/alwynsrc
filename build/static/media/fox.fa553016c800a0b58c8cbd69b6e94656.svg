@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-labelledby="title desc">
+  <title id="title">Coinbase Wallet icon</title>
+  <desc id="desc">Blue rounded square with a white circular center and blue rounded-square cutout.</desc>
+  <rect width="72" height="72" rx="21" fill="#0052FF"/>
+  <circle cx="36" cy="36" r="23" fill="#FFFFFF"/>
+  <rect x="29" y="29" width="14" height="14" rx="2" fill="#0052FF"/>
+</svg>

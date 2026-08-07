@@ -1,0 +1,154 @@
+.wallet-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.wallet-title-text {
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+.wallet-modal {
+    width: 374px;
+    height: 620px;
+    background: rgb(0, 0, 0);
+    border-radius:0px;
+    overflow: hidden;
+    position: absolute;
+    cursor: default;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+    top: 0px;
+    right: 0px;
+}
+
+/* Header */
+.wallet-header {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    user-select: none;
+}
+
+/* Dark mode */
+.wallet-header.dark {
+    background: #392623;
+}
+
+/* Light mode */
+.wallet-header.light {
+    background: #392623;
+}
+
+/* Title area */
+.wallet-title-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.wallet-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.wallet-title {
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1;
+}
+
+/* Title colors */
+.wallet-header.dark .wallet-title {
+    color: white;
+}
+
+.wallet-header.light .wallet-title {
+    color: black;
+}
+
+/* Controls */
+.wallet-controls {
+    display: flex;
+    height: 100%;
+}
+
+.win-btn {
+    width: 46px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button colors */
+.wallet-header.dark .win-btn {
+    color: white;
+}
+
+.wallet-header.light .win-btn {
+    color: black;
+}
+
+/* Hover all buttons */
+.win-btn:hover {
+    background: rgba(255,255,255,0.12);
+}
+
+/* Close button hover */
+.close-btn:hover {
+    background: #e81123;
+    color: white;
+}
+
+/* Body */
+.wallet-body {
+    height: calc(100% - 32px);
+    background: black;
+    overflow: hidden;
+}
+
+.mac-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.mac-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mac-btn.close {
+    background: #ff5f57;
+}
+
+.mac-btn.minimize {
+    background: #ffbd2e;
+}
+
+.mac-btn.maximize {
+    background: #28c840;
+}
+

@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+
+.popup-window body,
+.popup-window #app {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.popup-window,
+.popup-window body {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-window #app {
+  display: block;
+  padding: 0;
+}
+
+.wallet-window {
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 27px 17px;
+  color: #fff;
+  background: #111214;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.wallet-logo {
+  width: 61px;
+  height: 61px;
+  margin-bottom: 24px;
+  border-radius: 19px;
+  transform: translateY(-3px);
+}
+
+.wallet-title {
+  margin: 0;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+}
+
+.wallet-brand {
+  transform: translateY(-15px);
+  font-family: "Nunito", sans-serif;
+
+}
+
+.wallet-subtitle {
+  margin: 4px 0 0;
+  color: #8c8f98;
+  font-size: 22px;
+  font-weight: 500;
+  transform: translateY(-0px);
+}
+
+.wallet-content {
+  margin-top: auto;
+  margin-bottom: 30px;
+  transform: translateY(64px);
+}
+
+.password-label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-input {
+  width: 100%;
+  height: 59px;
+  padding-right: 55px;
+  padding-left: 20px;
+  color: #fff;
+  background: #090a0c;
+  border: 1px solid #5454ff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 200ms ease;
+}
+
+.password-input:focus {
+  border: 1px solid #3b75f2;
+}
+
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 16px;
+  height: 24px;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  opacity: 0.9;
+  transform: translateY(-50%);
+}
+
+.password-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.4;
+}
+
+.password-icon-cross {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.password-icon[aria-pressed='true'] .password-icon-cross {
+  opacity: 0;
+}
+
+.unlock-button {
+  width: 100%;
+  height: 57px;
+  margin-top: 85px;
+  color: #111;
+  background: #28447f;
+  border: 0;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transform-origin: center;
+  transition: background-color 250ms ease, transform 250ms ease;
+  transform: translateY(-55px);
+
+}
+
+.unlock-button:hover {
+  background: #4a82ff;
+}
+
+.unlock-button.has-password {
+  background: #4a82ff;
+}
+
+.unlock-button:active {
+  transform: translateY(-55px) scale(0.95);
+}
+/* Error input state */
+.password-input.error {
+
+    border: 1.5px solid #EF476F;
+
+    background:#090a0c;
+
+    color:white;
+
+}
+
+
+/* Error message container */
+.password-error {
+
+    display:flex;
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    z-index:1;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:0;
+
+    color:#EF476F;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    line-height:24px;
+
+}
+
+.password-error[hidden] {
+    display:none;
+}
+
+.password-input.error:focus {
+    border:1.5px solid #EF476F;
+}
+
+
+/* Error circle icon */
+.error-icon {
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:#EF476F;
+
+    color:#111214;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:10px;
+
+    font-weight:800;
+
+}
+.forgot-password {
+  width: 100%;
+  margin-top: 34px;
+  padding: 0;
+  color: #fff;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transform: translateY(-45px);
+
+}
+
+
+.login-section {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  max-width: none;
+  min-width: 0;
+  min-height: 0;
+
+  margin: 0;
+  padding: 24px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+  background: #141519;
+
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.login-logo {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin: 0;
+  padding: 0;
+
+  gap: 22px;
+}
+
+.wallet-logo {
+  display: block;
+
+  width: 62px;
+  height: 62px;
+
+  margin: 0;
+
+  border-radius: 18px;
+  object-fit: contain;
+  transform: none;
+}
+
+.wallet-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  transform: translateY(-5px);
+}
+
+.wallet-title {
+  margin: 0;
+
+  color: #fff;
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1.4px;
+  
+}
+
+.wallet-subtitle {
+  margin: 6px 0 0;
+
+  color: #8c8f98;
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  transform: none;
+}

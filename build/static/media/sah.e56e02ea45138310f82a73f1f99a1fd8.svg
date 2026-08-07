@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M2.5 12C4.45 8.45 7.6 6.3 12 6.3C16.4 6.3 19.55 8.45 21.5 12C19.55 15.55 16.4 17.7 12 17.7C7.6 17.7 4.45 15.55 2.5 12Z"
+        stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="12" cy="12" r="3"
+          stroke="white" stroke-width="2.2"/>
+  <path class="password-icon-cross" d="M4 20L20 4"
+        stroke="white" stroke-width="2.6" stroke-linecap="round"/>
+</svg>
